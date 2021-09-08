@@ -25,6 +25,8 @@ body {
     justify-content: center;
 }
 
+
+
 #titulo {
     font-family: glitch;
     color: white;
@@ -71,4 +73,24 @@ body {
     border-radius: 30px;
     border-color: 5px white solid;
     margin-top: 30px;
+}
+
+#info {
+    margin-top: 35px;
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+#resumo {
+    width: 40%;
+    
+}
+
+#textoResumo {
+    text-align: justify;
+
+}
+
+#videoDay {
+    border-radius: 15px;
 }

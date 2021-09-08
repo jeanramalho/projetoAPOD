@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto APOD</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <main id="principal">
@@ -13,8 +15,18 @@
             <h1 id="titulo">Projeto APOD</h1>
             <p>A cada dia uma imagem ou fotografia diferente do nosso fascinante universo é apresentada.</p>
             <p>Escolha data no campo abaixo, e veja qual a imagem apresentada nele</p>
-            <input type="date" id="data">
-            <img src="imagens/fundo.jpg" id="picDay">     
+            <input type="date" id="data">       
+            <button id="pesquisar">Pesquisar</button>
+        <section id="info">
+            <div id="media">
+            <img id="picDay">   
+            <div id="videoDay"></div>
+            
+            </div> 
+            <div id="resumo">
+                <p id="textoResumo"></p>
+            </div>
+        </section>
         
     </main>
 </body>
