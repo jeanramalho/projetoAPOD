@@ -46,7 +46,7 @@ body {
 }   
 
 
-#principal p {
+.txtMain {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -68,12 +68,16 @@ body {
 }
 
 #picDay {
-    width: 500px;
+    width: 600px;
     height: auto;
     border-radius: 30px;
     border-color: 5px white solid;
     margin-top: 30px;
+    cursor: pointer;
+    
+
 }
+
 
 #info {
     margin-top: 35px;
@@ -83,14 +87,40 @@ body {
 
 #resumo {
     width: 40%;
+    padding-top: 40px;
     
 }
 
 #textoResumo {
-    text-align: justify;
+    text-align: right;
+    font-size: 14pt;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0.2em 0.2em 0.3em black;
 
 }
 
 #videoDay {
     border-radius: 15px;
+}
+
+@media (max-width: 700px) {
+    #picDay {
+        width: 70vw;
+    }
+
+    #info {
+        flex-wrap: wrap;
+    }
+
+    #resumo {
+        width: 60vw;
+        margin-top: 20px;
+    }
+
+    #textoResumo {
+        text-align: justify;        
+    }
+
+
 }
