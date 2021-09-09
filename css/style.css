@@ -35,7 +35,7 @@ body {
     font-weight: bolder;
     font-size: 38pt;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 15px;
 }
 
 #principal {
@@ -43,6 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
 }   
 
 
@@ -74,8 +75,6 @@ body {
     border-color: 5px white solid;
     margin-top: 30px;
     cursor: pointer;
-    
-
 }
 
 
@@ -104,6 +103,35 @@ body {
     border-radius: 15px;
 }
 
+header {
+    margin-bottom: 0;
+}
+
+#logoNasa {
+    width: 150px;    
+}
+
+#pesquisar {
+    font-size: x-large;
+    font-family: hacked;
+    color: white;
+    background: none;
+    border: 2px white solid;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#titleResumo {
+    color: white;
+    font-size: 28pt;
+    font-family: hacked;
+    letter-spacing: 2px;
+    text-align: right;
+    margin-bottom: 10px;
+    text-shadow: 0.2em 0.2em 0.3em black;
+}
+
 @media (max-width: 700px) {
     #picDay {
         width: 70vw;
@@ -112,6 +140,11 @@ body {
     #info {
         flex-wrap: wrap;
     }
+
+    #titleResumo {
+        text-align: center;
+    }
+
 
     #resumo {
         width: 60vw;

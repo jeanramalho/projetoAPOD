@@ -2,6 +2,7 @@ var btn = document.getElementById('pesquisar')
 var imagem = document.getElementById('picDay')
 var videoDay = document.getElementById('videoDay')
 var textoResumo = document.getElementById('textoResumo')
+var tituloResumo = document.getElementById('titleResumo')
 
 
 var data = new Date()
@@ -27,6 +28,7 @@ $('#pesquisar').on('click',function() {
                     videoDay.innerHTML = `<iframe src=${dados.url} width='320' height='240' id='videoDay'>`
                     imagem.src = ""
                 }
+                    tituloResumo.innerHTML = `${dados.title}`
                     textoResumo.innerHTML = `${dados.explanation}`
                 }
     })
@@ -49,6 +51,7 @@ $(document).ready(function() {
                     videoDay.innerHTML = `<iframe src=${dados.url} width='320' height='240' id='videoDay'>`
                     imagem.src = ""
                 }
+                    tituloResumo.innerHTML = `${dados.title}`
                     textoResumo.innerHTML = `${dados.explanation}`
                 }
     })
